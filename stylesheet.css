@@ -1,49 +1,86 @@
 body {
-    max-width: 1000px;
     font-family: sans-serif;
-    margin: auto;
+    margin: 0px;
+    background-color: rgb(231, 235, 238);
     display: grid; 
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 1fr auto auto;
-    grid-template-areas:"header . nav"
+    grid-template-areas:"header header header"
                         "main main main"
                         "main main main";
 }
 
 header {
+    background-color: white;
+    width: 100%;
     grid-area: header;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: "logo . links";
+    margin-bottom: 5px;
+    box-shadow: 1px 1px 5px rgb(177, 174, 174);
 }
 
-header ul li{
-    list-style-type: none;
+#logo {
+    grid-area: logo;
+    padding: 20px;
+    justify-self: center;
+    align-self: center;
 }
 
 nav {
-    grid-area: nav;
+    grid-area: links;
+    position: relative;
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 40px 10px;
+    font-size: 24px;
+    font-family: monospace , sans-serif;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
 }
 
 main {
     grid-area: main;
+    background-color: white;
+    padding: 50px 0px 100px 200px;
 }
 
 #section1 {
-    max-width: 900px;
+    max-width: 1000px;
+}
+
+h1 {
+    margin-top: 30px;
+    padding-top: 30px;
 }
 
 #section2 {
     grid-area: main;
     display: flex;
-    max-width: 900px;
+    max-width: 1000px;
     flex-wrap: wrap;
     flex-direction: row;
 }
 
 .box {
-    border-radius: 20px;
+    background-color: white;
+    border-radius: 8px;
     padding: 25px;
     margin: 20px;
-    max-width: 200px;
-    border-style:groove;
+    max-width: 242px;
+    box-shadow: 0px 1px 2px 1px rgb(205, 243, 243);
 }
 
 #button1 {
@@ -51,10 +88,31 @@ main {
     color: white;
     font-weight: bolder;
     text-decoration: none;
-    float: right;
     padding: 10px;
     border-radius: 8px;
     padding: 10px 50px;
+    float: right;
+}
+
+label  {
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+form  {
+    margin-bottom: 20px;
+}
+
+textarea {
+    border-radius: 10px;
+}
+
+#button1:hover {
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 .button2 {
@@ -62,20 +120,26 @@ main {
     color: white;
     font-weight: bolder;
     text-decoration: none;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+button {
     float: right;
+    background-color: rgb(95, 218, 218);
+    color: white;
+    font-weight: bolder;
+    text-decoration: none;
     padding: 10px;
     border-radius: 8px;
 }
 
 
-/* Mindre enheter som mobiltelefon*/
+/* MEDIA QUERIES*/
 @media only screen and (max-width: 800px) {
-    body {
-        grid-template-columns: 2fr;
-        grid-template-rows: 1fr 1fr auto auto;
-        grid-template-areas:    "header"
-                                "menu"
-                                "main"
-                                "footer";
-
+    .section2 {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
 }

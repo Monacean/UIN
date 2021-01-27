@@ -8,9 +8,9 @@
 </head>
 <body>
 
-   <!--------------------------------------Header----------------------------->
+<!--------------------------------------Header----------------------------->
    <header class ="header1">
-        <h1>HIOF</h1>
+        <h1 id="logo">HIOF</h1>
         
         <nav>
             <ul>
@@ -20,24 +20,33 @@
         </nav>
 
     </header>
-    <!-----------------------------------Main---------------------------------->
+    
+    
+    
+<!-----------------------------------Main---------------------------------->
+
 <main>
+
+    <!-----------Textarea------------->
+    
     <section id="section1">
-        <h3>Title</h3>
-            <form method="POST" action="#">
-                <input type="text" name= "title" width="100px" height="20px"/>
-            </form>
-
-        <h3>Content</h3>
-            <form method="POST" action="#">
-                <input type="text" name="content" width="200" height="40px"/>
-            </form>
-
         
-        <a id="button1" href="#">Add</a>
+            <form method="POST" action="#">
+                <label>Title</label><br/>
+                <textarea id="title" rows="5" cols="60"></textarea>
+            </form>
+
+            <form method="POST" action="#">
+                <label>Content</label><br/>
+                <textarea id="content" rows="10" cols="135"></textarea>
+            </form>
+
+            <input id="button1" value="Add" type="submit">
 
 
     </section>
+
+    <!----------Todocards-area---------->
 
     <h1>My Todos</h1>
 
@@ -46,37 +55,49 @@
         <article class="box">
             <h3>Todotitle</h3>
             <p>I`m baby sriracha hot chicken mixtape pabst organic air...</p>
-                <a class="button2" href="#">Complete</a>
+                <button>
+                    <a class="button2" href="#">Complete</a>
+                </button>
         </article>
 
         <article class="box">
             <h3>Todotitle</h3>
             <p>I`m baby sriracha hot chicken mixtape pabst organic air...</p>
-            <a class="button2" href="#">Complete</a>
+                <button>
+                    <a class="button2" href="#">Complete</a>
+                </button>
         </article>
 
         <article class="box">
             <h3>Todotitle</h3>
             <p>I`m baby sriracha hot chicken mixtape pabst organic air...</p>
-                <a class="button2" href="#">Complete</a>
+                <button>
+                    <a class="button2" href="#">Complete</a>
+                </button>
         </article>
 
         <article class="box">
             <h3>Todotitle</h3>
             <p>I`m baby sriracha hot chicken mixtape pabst organic air...</p>
-                <a class="button2" href="#">Complete</a>
+                <button>
+                    <a class="button2" href="#">Complete</a>
+                </button>
         </article>
 
         <article class="box">
             <h3>Todotitle</h3>
             <p>I`m baby sriracha hot chicken mixtape pabst organic air...</p>
-                <a class="button2" href="#">Complete</a>
+                <button>
+                    <a class="button2" href="#">Complete</a>
+                </button>
         </article>
 
         <article class="box">
             <h3>Todotitle</h3>
             <p>I`m baby sriracha hot chicken mixtape pabst organic air...</p>
-                <a class="button2" href="#">Complete</a>
+                <button>
+                    <a class="button2" href="#">Complete</a>
+                </button>
         </article>
 
     </section>
