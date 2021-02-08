@@ -271,11 +271,15 @@ try {
   })();
 
 
-  /*
+  
   (function UseParameterDestructuring2() {
     // Adjust the code to let the test succeed.
 
-    const a = 'Oslo' + 985;
+    //const a = 'Oslo' + 985;
+	//Samme prinsipp som over, men her er det brukt måkevinger, altså en assosiativ array, så man kan sortere både objekter og tilhørende 
+	//verdier inn i arrayen, og setter derfor objektene tilhørende verdier inn i klammene. 
+
+	const a = {name:'Oslo', age: 985};
 
     // Don't make changes below this line
 
@@ -288,20 +292,28 @@ try {
 
     solved++;
   })();
-	*/
+	
 
   /// Property shorthand ///
 
-  /*
+  
 	(function UsePropertyShorthand() {
 		const name = 'Oslo';
 		const age = 985;
 		const norwegian = true;
 		
 		// Remove all unnecesary syntax to let the test pass.
+		//let city = {
+			//name: name,
+			//age: age,
+			//dutch: !norwegian
+		//};
+
+		//Fjerner det som allerede er tildent en verdi, og som ikke trenger det en gang til, i dette tilfellet name og age. Nederlandsk er fortsatt ikke norsk. 
+
 		let city = {
-			name: name,
-			age: age,
+			name, 
+			age, 
 			dutch: !norwegian
 		};
 
@@ -311,16 +323,17 @@ try {
 		
 		solved++;
 	})();
-	*/
+	
 
   /// Object Spread Properties (ES2018) ///
 
-  /*
+  
 	(function UseObjectSpreadProperties1() {
 		let obj = { val: 1 };
 		
-		// Use Object Spread Properties to let the tests succeed.
-		let copy = obj;
+		// Use Object Spread Properties to let the tests succeed. 
+		//("Kloner")
+		let copy = {...obj};
 
 		// Don't make changes below this line	
 		
@@ -331,9 +344,9 @@ try {
 
 		solved++;
 	})();
-	*/
+	
 
-  /*
+  
 	(function UseObjectSpreadProperties2() {
 		let obj1 = { a: 100, b: 2, c: 300 };
 		let obj2 = { b: 0, d: 100, e: 200};
@@ -355,7 +368,7 @@ try {
 
 		solved++;
 	})();
-	*/
+	
 
   ////// BONUS //////
 
