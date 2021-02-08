@@ -356,7 +356,17 @@ try {
 		// - Do NOT use Object.assign()
 		// - Do use object spread properties
 		// - Think about the order!
-		let result = { obj1, obj2, obj3 };
+		
+		//let result = { obj1, obj2, obj3 };
+
+		//Rekkefølge: obj1, obj2, obj3, obj2, obj2. 
+		//Jeg ser at det er obj2 som må spres, for det er her det skal hentes ut flere verdier. De andre skal det bare hentes 1 fra. 
+
+		//let result = { a: obj1.a, ...obj2, c: obj3.c }; (Ikke best practice vil jeg tro?)
+
+
+		//Forsøker å spre alle objektene, men flytter obj2 til slutten. 
+		let result = {...obj1, ...obj3, ...obj2};
 
 		// Don't make changes below this line	
 		
