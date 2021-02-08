@@ -221,7 +221,7 @@ try {
 	})();
 	
 
-  /*
+  
 	(function UseObjectDestructuring1() {
 		let obj = {
 			name: 'Oslo',
@@ -230,9 +230,11 @@ try {
 		}
 		
 		// Use object destructuring to change the 3 statements below into 1 statement.
-		let name = obj.name;
-		let age = obj.age;
-		let add = obj.add;
+		//let name = obj.name;
+		//let age = obj.age;
+		//let add = obj.add;
+
+		const {name, age};
 
 		// Don't make changes below this line	
 		
@@ -242,7 +244,7 @@ try {
 		
 		solved++;
 	})();
-	*/
+	
 
   /*
   (function UseParameterDestructuring1() {
