@@ -185,7 +185,9 @@ try {
 
 		//TROR IKKE DENNE ER RETT. INGEN SPREAD? 
 
-		let [a, b, c] = [arr[0], arr[2], arr.slice(3)];
+		//let [a, b, c] = [arr[0], arr[2], arr.slice(3)];
+
+		let [a,, b, ...c] = arr;
 
 		// Don't make changes below this line	
 		
@@ -234,7 +236,7 @@ try {
 		//let age = obj.age;
 		//let add = obj.add;
 
-		const {name, age};
+		let {name, age, add} = obj; 
 
 		// Don't make changes below this line	
 		
@@ -246,11 +248,15 @@ try {
 	})();
 	
 
-  /*
+  
   (function UseParameterDestructuring1() {
     // Adjust the code to let the test succeed.
 
-    const a = 'Oslo' + 985;
+    //const a = 'Oslo' + 985;
+
+	//Endrer ved å sette verdiene inn i klammer, så det blir en array, og bytter ut + med komma. 
+
+	 const a = ['Oslo', 985];
 
     // Don't make changes below this line
 
@@ -263,7 +269,7 @@ try {
 
     solved++;
   })();
-	*/
+
 
   /*
   (function UseParameterDestructuring2() {
