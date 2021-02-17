@@ -23,7 +23,7 @@ try {
 
   (function UseLetOrConst() {
     // Use let (or const) instead of var to make the function succeed.
-    var x = 1;
+    const x = 1;
     if (true) {
       let x = 2;
     } //endrer fra var til let på linje
