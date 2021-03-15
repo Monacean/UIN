@@ -1,6 +1,9 @@
 
 
 const Movie = () => {
+    return (
+        <></>
+    );
     
 };
 
