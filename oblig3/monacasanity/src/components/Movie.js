@@ -1,5 +1,7 @@
-const Movie = () => {
 
+
+const Movie = () => {
+    
 };
 
 export default Movie; 
