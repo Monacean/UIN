@@ -3,7 +3,8 @@ import Movies from './components/Movies.js';
 const App = () => {
   return (
   <>
-    <h1>Things will happen here</h1>
+    <h1>My Movie list in React and Sanity</h1>
+    <p>Mona Andreassen</p>
     <Movies/>
   </>
 );
