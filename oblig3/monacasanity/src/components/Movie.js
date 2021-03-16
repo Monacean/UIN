@@ -1,7 +1,10 @@
+import Movies from './Movies';
 
-const Movie = () => {
+const Movie = ({children, ...props}) => {
     return (
-        <></>
+        <>
+        <Movies/>
+        </>
     );
 };
 

@@ -1,10 +1,16 @@
+import Movie from './Movie';
 
-
-const Movies = () => {
+function Movies(props) {
     return (
-        <></>
+        <>
+            <Movie>
+                title= {props.title}
+                actor= {props.actor}
+                children= {props.children}
+            </Movie>
+        </>
     );
-    
-};
+
+}
 
 export default Movies; 
