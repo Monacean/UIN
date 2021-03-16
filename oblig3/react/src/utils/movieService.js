@@ -1,11 +1,11 @@
 import client from './client';
 
-const listMovies= `
+const setMovie= `
     title,
     'actor': actor->name
     `;
 
     export const getMovie = async () => {
-        const data = await client.fetch(`*[_type == "movie"]{${listMovies}}`);
+        const data = await client.fetch(`*[_type == "movie"]{${setMovie}}`);
         return data;
-    }
+    };

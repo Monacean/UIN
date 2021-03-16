@@ -3,14 +3,22 @@ import Movie from './Movie';
 
 
 const Movies = () => {
-    const [movie, setMovie] = useState([]);
+    const [data, setMovie] = useState([]);
+
+    const handleClick = async () =>{
+        const movies = await getMovie();
+        setMovie(movies);
+    }
     return (
         <>
             <Movie 
             title='Movie title'
             actor='Actor'
             />
-            <button type="button">Get Movies</button>
+            <button type="button" onclick= {handleClick}>Get Movies</button>
+                {data?.length > 0 ? data.map((movie, index) => 
+                <Movie key={index} title={movie.title} actor={movie.actor}/>) : null}
+
         </>
     );
 
