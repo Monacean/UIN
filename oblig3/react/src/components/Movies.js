@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import {getMovie} from '../utils/movieService';
 import Movie from './Movie';
 
 
