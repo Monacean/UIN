@@ -1,6 +1,6 @@
 import Movies from './Movies';
 
-const Movie = ({children, ...props}) => {
+const Movie = ({title, actor}) => {
     return (
         <>
         <Movies/>
