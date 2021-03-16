@@ -14,7 +14,7 @@ const movie = {
             name: 'actor',
             title: 'Actor',
             type: 'reference',
-            description: 'Movie actor', 
+            description: 'Actors name', 
             to: [{type: 'actor'}],
             validation: (Rule)=>Rule.required(),
         }
