@@ -1,11 +1,10 @@
-import Movies from './Movies';
 
-const Movie = ({title, actor}) => {
-    return (
-        <>
-        <Movies/>
-        </>
-    );
-};
+
+const Movie = ({title, actor}) => (
+    <>
+       {title}
+       {actor}
+    </>
+);
 
 export default Movie;

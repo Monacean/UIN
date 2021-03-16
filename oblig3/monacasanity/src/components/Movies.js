@@ -1,16 +1,19 @@
+import {useState} from 'react';
 import Movie from './Movie';
 
-function Movies(props) {
+
+const Movies = () => {
+    const [movie, setMovie] = useState([]);
     return (
         <>
-            <Movie>
-                title= {props.title}
-                actor= {props.actor}
-                children= {props.children}
-            </Movie>
+            <Movie 
+            title='Movie title'
+            actor='Actor'
+            />
+            <button type="button">Get Movies</button>
         </>
     );
 
-}
+};
 
 export default Movies; 
