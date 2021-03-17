@@ -4,12 +4,12 @@ import Movie from './Movie';
 
 
 const Movies = () => {
-    const [data, setMovie] = useState([]);
+    const [data, setData] = useState([]);
 
     const handleClick= async () =>{
         const movies= await getMovie();
         console.log(movies);
-        setMovie(movies);
+        setData(movies);
     }
     return (
         <>
