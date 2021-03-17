@@ -19,7 +19,7 @@ const Movies = () => {
             />
             <button type="button" onClick= {handleClick}>Get Movies</button>
             
-            {/*Denne koden er ikke min, har plukket opp i øvingstime*/}
+            {/*Copy code, did not figure this out by myself*/}
                 {data?.length > 0 ? data.map((movie, index) => 
                 <Movie key={index} title={movie.title} actor={movie.actor}/>) : null}
 
