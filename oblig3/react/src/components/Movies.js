@@ -8,6 +8,7 @@ const StyledDiv = styled.div`
     width: 100%;
     max-width: 1100px;
     padding: 0 2rem;
+    text-align: center; 
 `;
 
 const StyledButton = styled.button`
@@ -17,9 +18,15 @@ const StyledButton = styled.button`
     font-size: 2rem;
     padding: 1rem;
     margin: 2rem;
+    background-color: #5f9ea0;
+    color: white;
 
+    :hover {
+        background-color: black;
+        color: white;
+    }
+    
     a {
-        color: #fff;
         text-decoration: none; 
     }
 `;
