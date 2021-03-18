@@ -1,6 +1,33 @@
 import {useState} from 'react';
 import {getMovie} from '../utils/movieService';
 import Movie from './Movie';
+import styled from 'styled-components';
+
+const StyledDiv = styled.div`
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1100px;
+    padding: 0 2rem;
+`;
+
+const StyledButton = styled.button`
+    cursor: pointer;
+    outline: none;
+    border: 1px black 10px; 
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 2rem;
+
+    a {
+        color: #fff;
+        text-decoration: none; 
+    }
+`;
+
+const StyledList =  styled.ul`
+    padding: 30px;
+    list-style-type: none; 
+`; 
 
 
 const Movies = () => {
@@ -12,18 +39,11 @@ const Movies = () => {
         setData(movies);
     }
     return (
-        <>
-            <Movie 
-            title='Movie title'
-            actor='Actor'
-            />
-            <button type="button" onClick= {handleClick}>Get Movies</button>
-            
-            {/*Copy code, did not figure this out by myself*/}
-                {data?.length > 0 ? data.map((movie, index) => 
-                <Movie key={index} title={movie.title} actor={movie.actor}/>) : null}
-
-        </>
+        <StyledDiv>
+            <StyledButton type="button" onClick= {handleClick}>Get Movies</StyledButton>
+            <StyledList>{data?.length > 0 ? data.map((movie, index) => 
+            <Movie key={index} title={movie.title} actor= {movie.actor}/>) : null}</StyledList>
+        </StyledDiv>
     );
 
 };

@@ -3,7 +3,10 @@ import { GlobalStyles } from './Global';
 
 
 const theme = {
-    background: '#e6e6fa'
+    background: '#e6e6fa',
+    colors: {
+        default: '#8fbc8f'
+    },
 };
 
 const Theme = ({children}) => (

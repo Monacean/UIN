@@ -52,7 +52,7 @@ export const GlobalStyles = createGlobalStyle `
   body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     h1 {
-      font-size: 4rem;
+      font-size: 5rem;
     }
     h2 {
       font-size: 2.8rem;
@@ -61,7 +61,7 @@ export const GlobalStyles = createGlobalStyle `
       font-size: 2rem;
     }
     p {
-      font-size: 1.6rem;
+      font-size:2rem;
     }
   }
 `;
