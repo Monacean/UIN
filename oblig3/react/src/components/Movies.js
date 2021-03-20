@@ -52,7 +52,6 @@ const Movies = () => {
             <Movie key={index} title={movie.title} actor= {movie.actor}/>) : null}</StyledList>
         </StyledDiv>
     );
-
 };
 
 export default Movies; 
